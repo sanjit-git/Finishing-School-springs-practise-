@@ -1,0 +1,137 @@
+1) What is a LocalDate in the Java8 DAte & Time API?
+
+A)a date with the precision of a second that does not depend on the time zone.
+
+B)a date with the precision of a day that does  depends on the time zone.
+
+C)a date with the precision of a second that does  depends on the time zone.
+
+D)a date with the precision of a day that does  not depend on the time zone.
+
+
+2)What is a ZonedTime in the java 8  Date & Time API?
+
+A) a LocalDate that can be displayed in a give time zone.
+
+B) a LocalDate bound to a given time zone.
+
+C) an Instant that can be displayed in a given timezone.
+
+D) an Instant bound to a given time zone.
+
+Answer-- A
+The LocalDateTime class introduced in Java 8 stores the date and time but not the timezone
+
+
+
+3) What is an Instant in the Java 8?
+
+A) a date with the precision of a second that does not depend on the time zone.
+
+B)a date with the precision of a nanosecond that does depends on the time zone. 
+
+C)a date with the precision of a nanosecond that does not depend on the time zone.
+
+D) a date with the precision of a second that does depend on the time zone.
+
+Answer--- C  (a date with the precision of a nanosecond that does not depend on the time zone.)
+
+
+4)What is FXML file for?
+
+A) it allows the creation of a GUI in javaFX, and uses SAX to handle controllers.
+
+B)with no support for controllers.
+
+C) and relies on dependecy injection to handle controllers.
+
+Answer---A
+FXML is an XML-based language designed to build the user interface for JavaFX applications. 
+
+5)Why does immutability matter in the java 8?
+
+A) because no calling code will be able to read them.
+
+B) because my dates are safe by default from modifications by some calling code.
+
+C)because some calling code will not have to dupliate my  dates to modify them.
+
+D) because it allows some calling to modify my dates easily.
+
+Answer---B
+old java.util.Date which is not thread safe the new date-time API is immutable and doesn’t have setter methods.
+
+
+6) What is the eaisest way to concatenate String in java 8?
+
+A) use the +sign, which is thread safe.
+
+B) use the StringBuilder class i.e threadsafe.
+
+C) use the String.join static method that handles
+prefix, postfix, and separator
+
+D) use the StringJoiner class that handles prefix, postfix and separator.
+
+Answer----C
+you don't need to create another object like StringJoiner. It also allows you to join String from a Collection class like ArrayList or LinkedList, which means you can create a comma-separated String from an ArrayList of String,
+
+
+7) What is the most efficient way of computing that hashcode of long(primitive type) in java8?
+
+A) the computation should be programmed by hand.
+
+B) the hashcode of a long is the long itself, no need to compute it.
+
+C)wrap the long in a Long to compute the hashcode.
+
+D)use the new static method Long.hashcode.
+Answer--- D
+
+
+11) What does the Map operation do?
+
+A) it takes a stream of a give type, returns a stream of the same type,keeping all the elements.
+
+B) it takes a stream of a give type, returns a stream of the different type,keeping all the elements.
+Answer----B
+
+That's why the Stream.map(Function mapper) takes a function as an argument. For example, by using the map() function, you can convert a list of String into a List of Integer by applying the Integer.valueOf() method to each String on the input list.
+
+13)How can i access the javascript PERL in java8?
+
+A) pass hte jjs.jar JAR file tothe JVM while launching it
+
+B)launch the jjs script, located in bin/tools.
+
+C)launch the jjs script, located in the same dir as java & javac.
+
+
+
+14)What happens when one call two terminal operations on a Stream?
+
+A)an Exception is raised: only one terminal operation is allowed per Stream.
+
+B) the intermediary results are kept, allowing better performance.
+
+C)a corrupt result is returned: more than one terminal operation is not allowed, but not enforced.
+
+D)normal computation is conducted, no intermediary results are kept, performance is no better.
+
+Answer--- A
+
+If we try to call any other terminal function on a closed stream it will result in a java.lang.IllegalStateException: stream has already been operated upon or closed.
+
+
+
+15)What is LocalTime in java 8?
+
+A) a time with the percision of a minute, with a date.
+
+B) a time with the percision of a second, with a date.
+
+C) a time with the percision of a second, with no date.
+
+D) a time with the percision of a minute, with no date.
+Answer---C,D
+LocalTime is an immutable date-time object that represents a time, often viewed as hour-minute-second. Time is represented to nanosecond precision. For example, the value "13:45.30.123456789" can be stored in a LocalTime. 
